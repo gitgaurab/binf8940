@@ -17,3 +17,5 @@ ml minimap2/2.10-foss-2016b
 minimap2 -t 10 -x ava-pb SRR1200815_subreads.fastq SRR1200815_subreads.fastq|gzip -1 >Pacbio_aln_miniasm.paf.gz
 miniasm -h 1000 -f SRR1200815_subreads.fastq Pacbio_aln_miniasm.paf.gz>Pacbio_aln_miniasm.gfa 2>Pacbio_aln_miniasm.log
 perl -lane 'print ">$F[1]\n$F[2]" if $F[0] eq "S" Pacbio_aln_miniasm.gfa>Pacbio_consensus_miniasm.fasta
+
+But finally this script did not work!!!!!!!!!!!!!!!!!!
